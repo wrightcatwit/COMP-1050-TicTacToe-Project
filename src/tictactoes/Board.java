@@ -14,7 +14,7 @@ public class Board {
 		 return false; 
 	 }
 	 
-	 public boolean isActive() {
+	 public boolean isActive() { //idk if we will need this but sure
 		 return false;
 	 }
 	
