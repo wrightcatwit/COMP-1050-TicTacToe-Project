@@ -2,6 +2,17 @@ package tictactoes;
 
 public class Board {
 	
-	private int[] Secs = new int[9]; //index 0 topleft, index 8 bottom right
+	private Pieces[][]Board = new Pieces[3][3];
+	private boolean isWon = false; 
+	
+	 public Board(Pieces[][] Board, boolean isWon) {
+		 this.Board = Board;
+		 this.isWon = threeInARow(Board);
+	}
+	 
+	 public boolean threeInARow(Pieces[][] Board) {
+		 return false; 
+	 }
+	
 	
 }
