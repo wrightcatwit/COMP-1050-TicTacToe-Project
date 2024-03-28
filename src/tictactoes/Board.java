@@ -3,7 +3,7 @@ package tictactoes;
 public class Board {
 	
 	private Pieces[][]Board = new Pieces[3][3];
-	private boolean isWon = false; 
+	private boolean isWon = false;
 	
 	 public Board(Pieces[][] Board, boolean isWon) {
 		 this.Board = Board;
@@ -12,6 +12,10 @@ public class Board {
 	 
 	 public boolean threeInARow(Pieces[][] Board) {
 		 return false; 
+	 }
+	 
+	 public boolean isActive() {
+		 return false;
 	 }
 	
 	
