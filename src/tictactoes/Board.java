@@ -1,4 +1,4 @@
-	package tictactoes;
+package tictactoes;
 
 import java.net.URL;
 import java.util.ResourceBundle;

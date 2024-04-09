@@ -10,7 +10,7 @@ public class GameMaster {
 		int lastPlayedVert , lastPlayedHoriz; 
 
 		boolean isXturn = true; //will start true bc x goes first, and alternate every turn
-		//this is for the test push
+	
 		
 	}
 	
