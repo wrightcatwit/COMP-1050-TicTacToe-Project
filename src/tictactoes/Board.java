@@ -18,6 +18,27 @@ public class Board extends Application implements Initializable{
 	@FXML
 	GridPane o1 = new GridPane();
 	
+	private int player = 0;
+	
+	@FXML
+	private Button b1r1c1;
+	@FXML
+	private Button b1r1c2;
+	@FXML
+	private Button b1r1c3;
+	@FXML
+	private Button b1r2c1;
+	@FXML
+	private Button b1r2c2;
+	@FXML
+	private Button b1r2c3;
+	@FXML
+	private Button b1r3c1;
+	@FXML
+	private Button b1r3c2;
+	@FXML
+	private Button b1r3c3;
+	
 	public static void main(String[] args) {launch(args);}
 
 	@Override
