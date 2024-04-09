@@ -1,6 +1,7 @@
 package tictactoes;
 
 import java.net.URL;
+import java.util.ArrayList;
 import java.util.ResourceBundle;
 
 import javafx.application.Application;
@@ -190,6 +191,16 @@ public class Board extends Application implements Initializable{
     private Button b9r3c2;
     @FXML 
     private Button b9r3c3;
+    
+    ArrayList<Button> b1Buttons;
+    ArrayList<Button> b2Buttons;
+    ArrayList<Button> b3Buttons;
+    ArrayList<Button> b4Buttons;
+    ArrayList<Button> b5Buttons;
+    ArrayList<Button> b6Buttons;
+    ArrayList<Button> b7Buttons;
+    ArrayList<Button> b8Buttons;
+    ArrayList<Button> b9Buttons;
 	
 	public static void main(String[] args) {launch(args);}
 
