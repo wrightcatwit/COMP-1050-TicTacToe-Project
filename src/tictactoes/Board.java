@@ -114,6 +114,63 @@ public class Board extends Application implements Initializable{
     private Button b5r3c2;
     @FXML 
     private Button b5r3c3;
+    
+    @FXML
+  	private Button b6r1r1;
+  	@FXML
+  	private Button b6r1c2;
+  	@FXML
+  	private Button b6r1c3;
+  	@FXML
+  	private Button b6r2c1;
+  	@FXML
+  	private Button b6r2c2;
+  	@FXML
+  	private Button b6r2c3;
+  	@FXML 
+  	private Button b6r3c1;
+    @FXML
+    private Button b6r3c2;
+    @FXML 
+    private Button b6r3c3;
+    
+    @FXML
+  	private Button b7r1r1;
+  	@FXML
+  	private Button b7r1c2;
+  	@FXML
+  	private Button b7r1c3;
+  	@FXML
+  	private Button b7r2c1;
+  	@FXML
+  	private Button b7r2c2;
+  	@FXML
+  	private Button b7r2c3;
+  	@FXML 
+  	private Button b7r3c1;
+    @FXML
+    private Button b7r3c2;
+    @FXML 
+    private Button b7r3c3;
+    
+    @FXML
+  	private Button b8r1r1;
+  	@FXML
+  	private Button b8r1c2;
+  	@FXML
+  	private Button b8r1c3;
+  	@FXML
+  	private Button b8r2c1;
+  	@FXML
+  	private Button b8r2c2;
+  	@FXML
+  	private Button b8r2c3;
+  	@FXML 
+  	private Button b8r3c1;
+    @FXML
+    private Button b8r3c2;
+    @FXML 
+    private Button b8r3c3;
 	
 	public static void main(String[] args) {launch(args);}
 
