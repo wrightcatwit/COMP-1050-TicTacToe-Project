@@ -15,7 +15,6 @@ import javafx.stage.Stage;
 
 public class Board extends Application implements Initializable{
 	
-<<<<<<< HEAD
 	@FXML
 	GridPane o1 = new GridPane();
 	
@@ -58,23 +57,9 @@ public class Board extends Application implements Initializable{
 		// TODO Auto-generated method stub
 		
 	}
-=======
-	private Pieces[][]Board = new Pieces[3][3];
-	private boolean isWon = false;
+
 	
-	 public Board(Pieces[][] Board, boolean isWon) {
-		 this.Board = Board;
-		 this.isWon = threeInARow(Board);
-	}
-	 
-	 public boolean threeInARow(Pieces[][] Board) {
-		 return false; 
-	 }
-	 
-	 public boolean isActive() { //idk if we will need this but sure
-		 return false;
-	 }
->>>>>>> refs/remotes/origin/main
+
 	
 	
 }
