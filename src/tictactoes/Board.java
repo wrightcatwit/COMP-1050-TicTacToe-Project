@@ -218,12 +218,16 @@ public class Board extends Application implements Initializable{
 //
 	@Override
 	public void initialize(URL arg0, ResourceBundle arg1) {
-		// TODO Auto-generated method stub
 		b1Buttons = new ArrayList<>(Arrays.asList(b1r1c1, b1r2c1, b1r3c1, b1r2c1, b1r2c2, b1r2c3, b1r3c1, b1r3c2, b1r3c3));
 		b2Buttons = new ArrayList<>(Arrays.asList(b2r1c1, b2r2c1, b2r3c1, b2r2c1, b2r2c2, b2r2c3, b2r3c1, b2r3c2, b2r3c3));
 		b3Buttons = new ArrayList<>(Arrays.asList(b3r1c1, b3r2c1, b3r3c1, b3r2c1, b3r2c2, b3r2c3, b3r3c1, b3r3c2, b3r3c3));
 		b4Buttons = new ArrayList<>(Arrays.asList(b4r1c1, b4r2c1, b4r3c1, b4r2c1, b4r2c2, b4r2c3, b4r3c1, b4r3c2, b4r3c3));
 		b5Buttons = new ArrayList<>(Arrays.asList(b5r1c1, b5r2c1, b5r3c1, b5r2c1, b5r2c2, b5r2c3, b5r3c1, b5r3c2, b5r3c3));
+		
+		b6Buttons = new ArrayList<>(Arrays.asList(b6r1c1, b6r2c1, b6r3c1, b6r2c1, b6r2c2, b6r2c3, b6r3c1, b6r3c2, b6r3c3));
+		b7Buttons = new ArrayList<>(Arrays.asList(b7r1c1, b7r2c1, b7r3c1, b7r2c1, b7r2c2, b7r2c3, b7r3c1, b7r3c2, b7r3c3));
+		b8Buttons = new ArrayList<>(Arrays.asList(b8r1c1, b8r2c1, b8r3c1, b8r2c1, b8r2c2, b8r2c3, b8r3c1, b8r3c2, b8r3c3));
+		b9Buttons = new ArrayList<>(Arrays.asList(b9r1c1, b9r2c1, b9r3c1, b9r2c1, b9r2c2, b9r2c3, b9r3c1, b9r3c2, b9r3c3));
 	}
 
 	
