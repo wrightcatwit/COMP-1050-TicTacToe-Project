@@ -215,7 +215,7 @@ public class Board extends Application implements Initializable{
 		primaryStage.show();
 		
 	}
-
+//
 	@Override
 	public void initialize(URL arg0, ResourceBundle arg1) {
 		// TODO Auto-generated method stub
