@@ -14,7 +14,7 @@ import javafx.scene.layout.GridPane;
 import javafx.stage.Stage;
 
 public class Board extends Application implements Initializable{
-	
+	//HHH
 	@FXML
 	GridPane o1 = new GridPane();
 	
