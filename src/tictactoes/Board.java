@@ -290,25 +290,23 @@ public class Board extends Application implements Initializable{
 	
 	//i want to switch this to take an array of all the button ones
 	public void gameOver(ArrayList<Button> e) {
-		/*for(int i = 0; i < 8; i++) {
+		for(int i = 0; i < 8; i++) {
 			String line = switch(i) {
-			case 0 -> but1.getText() + but2.getText() + but3.getText();
-			case 1 -> but1.getText() + but4.getText() + but7.getText();
-			case 2 -> but1.getText() + but5.getText() + but9.getText();
-			case 3 -> but2.getText() + but5.getText() + but8.getText();
-			case 4 -> but3.getText() + but6.getText() + but9.getText();
-			case 5 -> but3.getText() + but5.getText() + but7.getText();
-			case 6 -> but4.getText() + but5.getText() + but6.getText();
-			case 7 -> but7.getText() + but8.getText() + but9.getText();
+			case 0 -> e.get(0).getText() + e.get(1).getText() + e.get(2).getText();
+			case 1 -> e.get(3).getText() + e.get(4).getText() + e.get(5).getText();
+			case 2 -> e.get(6).getText() + e.get(7).getText() + e.get(8).getText();
+			
+			case 3 -> e.get(0).getText() + e.get(3).getText() + e.get(6).getText();
+			case 4 -> e.get(1).getText() + e.get(4).getText() + e.get(7).getText();
+			case 5 -> e.get(2).getText() + e.get(5).getText() + e.get(8).getText();
+			
+			case 6 -> e.get(0).getText() + e.get(4).getText() + e.get(8).getText();
+			case 7 -> e.get(2).getText() + e.get(4).getText() + e.get(6).getText();		
 			default -> null;
 			};
+		
 			
-			if(line.equals("XXX")) {
-				wint.setText("X wins");
-			}else if(line.equals("OOO")) {
-				wint.setText("O wins");
-			}
-		}*/
+		}
 	}
 	
 	private void pressed(Button b, ArrayList<Button> e) {
