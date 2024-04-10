@@ -19,6 +19,9 @@ import javafx.stage.Stage;
 public class Board extends Application implements Initializable{
 	
 	@FXML
+	private Text title = new Text("Supreme TicTacToe!!");
+	
+	@FXML
 	private GridPane b1;
 	@FXML
 	private GridPane b2;
@@ -330,6 +333,85 @@ public class Board extends Application implements Initializable{
 	}
 	
 	//i want to switch this to take an array of all the button ones
+	public void gameOver() {
+		for(int i = 0; i < 8; i++) {
+			String bigLine = switch(i) {
+			case 0 -> t1.getText() + t2.getText() + t3.getText();
+			case 1 -> t4.getText() + t5.getText() + t6.getText();
+			case 2 -> t7.getText() + t8.getText() + t9.getText();
+			
+			case 3 -> t1.getText() + t4.getText() + t7.getText();
+			case 4 -> t2.getText() + t5.getText() + t8.getText();
+			case 5 -> t3.getText() + t6.getText() + t9.getText();
+			
+			case 6 -> t1.getText() + t5.getText() + t9.getText();
+			case 7 -> t3.getText() + t5.getText() + t7.getText();
+
+ 			default -> null;
+			};
+			
+			if(bigLine.equals("XXX")) {
+				title.setText("X Wins!!");
+				b1Buttons.forEach(b ->{
+					b.setDisable(true);
+				});
+				b2Buttons.forEach(b ->{
+					b.setDisable(true);
+				});
+				b3Buttons.forEach(b ->{
+					b.setDisable(true);
+				});
+				b4Buttons.forEach(b ->{
+					b.setDisable(true);
+				});
+				b5Buttons.forEach(b ->{
+					b.setDisable(true);
+				});
+				b6Buttons.forEach(b ->{
+					b.setDisable(true);
+				});
+				b7Buttons.forEach(b ->{
+					b.setDisable(true);
+				});
+				b8Buttons.forEach(b ->{
+					b.setDisable(true);
+				});
+				b9Buttons.forEach(b ->{
+					b.setDisable(true);
+				});
+			}else if(bigLine.equals("OOO")) {
+				title.setText("O Wins!!");
+				b1Buttons.forEach(b ->{
+					b.setDisable(true);
+				});
+				b2Buttons.forEach(b ->{
+					b.setDisable(true);
+				});
+				b3Buttons.forEach(b ->{
+					b.setDisable(true);
+				});
+				b4Buttons.forEach(b ->{
+					b.setDisable(true);
+				});
+				b5Buttons.forEach(b ->{
+					b.setDisable(true);
+				});
+				b6Buttons.forEach(b ->{
+					b.setDisable(true);
+				});
+				b7Buttons.forEach(b ->{
+					b.setDisable(true);
+				});
+				b8Buttons.forEach(b ->{
+					b.setDisable(true);
+				});
+				b9Buttons.forEach(b ->{
+					b.setDisable(true);
+				});
+			}
+		}
+	}
+	
 	public void gameOver(ArrayList<Button> e,GridPane l, Text u) {
 		for(int i = 0; i < 8; i++) {
 			String line = switch(i) {
@@ -363,6 +445,7 @@ public class Board extends Application implements Initializable{
 			setSymbol(b);
 			b.setDisable(true);
 			gameOver(e,l,u);
+			gameOver();
 		});
 	}
 
