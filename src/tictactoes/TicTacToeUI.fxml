@@ -22,12 +22,12 @@
           <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
         </rowConstraints>
          <children>
-            <Text fill="#121946" smooth="false" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="74.0" GridPane.halignment="CENTER">
+            <Text fx:id="t1" fill="#121946" smooth="false" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="74.0" GridPane.halignment="CENTER">
                <font>
                   <Font size="25.0" />
                </font>
             </Text>
-            <GridPane fx:id="o1" gridLinesVisible="true">
+            <GridPane fx:id="b1" gridLinesVisible="true">
               <columnConstraints>
                 <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
                 <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
@@ -50,12 +50,12 @@
                   <Button fx:id="b1r2c2" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" GridPane.columnIndex="1" GridPane.rowIndex="1" />
                </children>
             </GridPane>
-            <Text fill="#121679" strokeType="OUTSIDE" strokeWidth="0.0" GridPane.columnIndex="1" GridPane.halignment="CENTER">
+            <Text fx:id="t2" fill="#121679" strokeType="OUTSIDE" strokeWidth="0.0" GridPane.columnIndex="1" GridPane.halignment="CENTER">
                <font>
                   <Font size="25.0" />
                </font>
             </Text>
-            <GridPane fx:id="o11" gridLinesVisible="true" GridPane.columnIndex="1">
+            <GridPane fx:id="b2" gridLinesVisible="true" GridPane.columnIndex="1">
                <columnConstraints>
                   <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
                   <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
@@ -78,12 +78,12 @@
                   <Button fx:id="b2r3c3" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" GridPane.columnIndex="2" GridPane.rowIndex="2" />
                </children>
             </GridPane>
-            <Text fill="#191868" strokeType="OUTSIDE" strokeWidth="0.0" GridPane.columnIndex="2" GridPane.halignment="CENTER">
+            <Text fx:id="t3" fill="#191868" strokeType="OUTSIDE" strokeWidth="0.0" GridPane.columnIndex="2" GridPane.halignment="CENTER">
                <font>
                   <Font size="25.0" />
                </font>
             </Text>
-            <GridPane fx:id="o14" gridLinesVisible="true" GridPane.columnIndex="2">
+            <GridPane fx:id="b3" gridLinesVisible="true" GridPane.columnIndex="2">
                <columnConstraints>
                   <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
                   <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
@@ -106,12 +106,12 @@
                   <Button fx:id="b3r3c3" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" GridPane.columnIndex="2" GridPane.rowIndex="2" />
                </children>
             </GridPane>
-            <Text fill="#1b2663" strokeType="OUTSIDE" strokeWidth="0.0" GridPane.halignment="CENTER" GridPane.rowIndex="1">
+            <Text fx:id="t4" fill="#1b2663" strokeType="OUTSIDE" strokeWidth="0.0" GridPane.halignment="CENTER" GridPane.rowIndex="1">
                <font>
                   <Font size="25.0" />
                </font>
             </Text>
-            <GridPane fx:id="o12" gridLinesVisible="true" GridPane.rowIndex="1">
+            <GridPane fx:id="b4" gridLinesVisible="true" GridPane.rowIndex="1">
                <columnConstraints>
                   <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
                   <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
@@ -134,12 +134,12 @@
                   <Button fx:id="b4r3c3" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" GridPane.columnIndex="2" GridPane.rowIndex="2" />
                </children>
             </GridPane>
-            <Text fill="#0e194d" strokeType="OUTSIDE" strokeWidth="0.0" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="1">
+            <Text fx:id="t5" fill="#0e194d" strokeType="OUTSIDE" strokeWidth="0.0" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="1">
                <font>
                   <Font size="25.0" />
                </font>
             </Text>
-            <GridPane fx:id="o13" gridLinesVisible="true" GridPane.columnIndex="1" GridPane.rowIndex="1">
+            <GridPane fx:id="b5" gridLinesVisible="true" GridPane.columnIndex="1" GridPane.rowIndex="1">
                <columnConstraints>
                   <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
                   <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
@@ -162,12 +162,12 @@
                   <Button fx:id="b5r3c3" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" GridPane.columnIndex="2" GridPane.rowIndex="2" />
                </children>
             </GridPane>
-            <Text strokeType="OUTSIDE" strokeWidth="0.0" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="1">
+            <Text fx:id="t6" strokeType="OUTSIDE" strokeWidth="0.0" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="1">
                <font>
                   <Font size="25.0" />
                </font>
             </Text>
-            <GridPane fx:id="o15" gridLinesVisible="true" GridPane.columnIndex="2" GridPane.rowIndex="1">
+            <GridPane fx:id="b6" gridLinesVisible="true" GridPane.columnIndex="2" GridPane.rowIndex="1">
                <columnConstraints>
                   <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
                   <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
@@ -190,12 +190,12 @@
                   <Button fx:id="b6r3c3" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" GridPane.columnIndex="2" GridPane.rowIndex="2" />
                </children>
             </GridPane>
-            <Text strokeType="OUTSIDE" strokeWidth="0.0" GridPane.halignment="CENTER" GridPane.rowIndex="2">
+            <Text fx:id="t7" strokeType="OUTSIDE" strokeWidth="0.0" GridPane.halignment="CENTER" GridPane.rowIndex="2">
                <font>
                   <Font size="25.0" />
                </font>
             </Text>
-            <GridPane fx:id="o16" gridLinesVisible="true" GridPane.rowIndex="2">
+            <GridPane fx:id="b7" gridLinesVisible="true" GridPane.rowIndex="2">
                <columnConstraints>
                   <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
                   <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
@@ -218,12 +218,12 @@
                   <Button fx:id="b7r3c3" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" GridPane.columnIndex="2" GridPane.rowIndex="2" />
                </children>
             </GridPane>
-            <Text fill="#171732" strokeType="OUTSIDE" strokeWidth="0.0" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="2">
+            <Text fx:id="t8" fill="#171732" strokeType="OUTSIDE" strokeWidth="0.0" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="2">
                <font>
                   <Font size="25.0" />
                </font>
             </Text>
-            <GridPane fx:id="o17" gridLinesVisible="true" GridPane.columnIndex="1" GridPane.rowIndex="2">
+            <GridPane fx:id="b8" gridLinesVisible="true" GridPane.columnIndex="1" GridPane.rowIndex="2">
                <columnConstraints>
                   <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
                   <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
@@ -246,12 +246,12 @@
                   <Button fx:id="b8r3c3" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" GridPane.columnIndex="2" GridPane.rowIndex="2" />
                </children>
             </GridPane>
-            <Text fill="#14213c" strokeType="OUTSIDE" strokeWidth="0.0" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="2">
+            <Text fx:id="t9" fill="#14213c" strokeType="OUTSIDE" strokeWidth="0.0" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="2">
                <font>
                   <Font size="25.0" />
                </font>
             </Text>
-            <GridPane fx:id="o18" gridLinesVisible="true" GridPane.columnIndex="2" GridPane.rowIndex="2">
+            <GridPane fx:id="b9" gridLinesVisible="true" GridPane.columnIndex="2" GridPane.rowIndex="2">
                <columnConstraints>
                   <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
                   <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />

@@ -13,12 +13,53 @@ import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.layout.GridPane;
+import javafx.scene.text.Text;
 import javafx.stage.Stage;
 
 public class Board extends Application implements Initializable{
 	
 	@FXML
-	GridPane o1 = new GridPane();
+	private GridPane b1;
+	@FXML
+	private GridPane b2;
+	@FXML
+	private GridPane b3;
+	
+	@FXML
+	private GridPane b4;
+	@FXML
+	private GridPane b5;
+	@FXML
+	private GridPane b6;
+	
+	@FXML
+	private GridPane b7;
+	@FXML
+	private GridPane b8;
+	@FXML
+	private GridPane b9;
+	
+	
+	@FXML
+	private Text t1;
+	@FXML
+	private Text t2;
+	@FXML
+	private Text t3;
+	
+	@FXML
+	private Text t4;
+	@FXML
+	private Text t5;
+	@FXML
+	private Text t6;
+	
+	@FXML
+	private Text t7;
+	@FXML
+	private Text t8;
+	@FXML
+	private Text t9;
 	
 	private int player = 0;
 	
@@ -230,50 +271,50 @@ public class Board extends Application implements Initializable{
 		
 	//making 9 of these later
 		b1Buttons.forEach(b -> {
-			pressed(b,b1Buttons);
+			pressed(b,b1Buttons,b1,t1);
 			b.setFocusTraversable(false);
 		});
 		
 		b2Buttons.forEach(b -> {
-			pressed(b,b2Buttons);
+			pressed(b,b2Buttons,b2,t2);
 			b.setFocusTraversable(false);
 		});
 		
 		b3Buttons.forEach(b -> {
-			pressed(b,b3Buttons);
+			pressed(b,b3Buttons,b3,t3);
 			b.setFocusTraversable(false);
 		});
 		
 		b4Buttons.forEach(b -> {
-			pressed(b,b4Buttons);
+			pressed(b,b4Buttons,b4,t4);
 			b.setFocusTraversable(false);
 		});
 		
 		
 		b5Buttons.forEach(b -> {
-			pressed(b,b5Buttons);
+			pressed(b,b5Buttons,b5,t5);
 			b.setFocusTraversable(false);
 		});
 		
 		
 		b6Buttons.forEach(b -> {
-			pressed(b,b6Buttons);
+			pressed(b,b6Buttons,b6,t6);
 			b.setFocusTraversable(false);
 		});
 		
 		
 		b7Buttons.forEach(b -> {
-			pressed(b,b7Buttons);
+			pressed(b,b7Buttons,b7,t7);
 			b.setFocusTraversable(false);
 		});
 		
 		b8Buttons.forEach(b -> {
-			pressed(b,b8Buttons);
+			pressed(b,b8Buttons,b8,t8);
 			b.setFocusTraversable(false);
 		});
 		
 		b9Buttons.forEach(b -> {
-			pressed(b,b9Buttons);
+			pressed(b,b9Buttons,b9,t9);
 			b.setFocusTraversable(false);
 		});
 	}
@@ -289,7 +330,7 @@ public class Board extends Application implements Initializable{
 	}
 	
 	//i want to switch this to take an array of all the button ones
-	public void gameOver(ArrayList<Button> e) {
+	public void gameOver(ArrayList<Button> e,GridPane l, Text u) {
 		for(int i = 0; i < 8; i++) {
 			String line = switch(i) {
 			case 0 -> e.get(0).getText() + e.get(1).getText() + e.get(2).getText();
@@ -304,16 +345,24 @@ public class Board extends Application implements Initializable{
 			case 7 -> e.get(2).getText() + e.get(4).getText() + e.get(6).getText();		
 			default -> null;
 			};
+			
+			if(line.equals("XXX")) {
+				u.setText("X");
+				l.setVisible(false);
+			}else if(line.equals("OOO")) {
+				u.setText("O");
+				l.setVisible(false);
+			}
 		
 			
 		}
 	}
 	
-	private void pressed(Button b, ArrayList<Button> e) {
+	private void pressed(Button b, ArrayList<Button> e,GridPane l,Text u) {
 		b.setOnMouseClicked(m -> {
 			setSymbol(b);
 			b.setDisable(true);
-			gameOver(e);
+			gameOver(e,l,u);
 		});
 	}
 
