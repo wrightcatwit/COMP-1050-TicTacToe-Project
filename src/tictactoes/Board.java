@@ -366,6 +366,7 @@ public class Board extends Application implements Initializable{
 				title.setText("X Wins!!");
 				b1Buttons.forEach(b ->{
 					b.setDisable(true);
+					player = 0;
 				});
 				b2Buttons.forEach(b ->{
 					b.setDisable(true);
@@ -395,6 +396,7 @@ public class Board extends Application implements Initializable{
 				title.setText("O Wins!!");
 				b1Buttons.forEach(b ->{
 					b.setDisable(true);
+					player = 1;
 				});
 				b2Buttons.forEach(b ->{
 					b.setDisable(true);
