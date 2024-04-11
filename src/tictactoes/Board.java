@@ -444,12 +444,12 @@ public class Board extends Application implements Initializable{
 				u.setText("X");
 				l.setVisible(false);
 				player = 0;
-				turn.setText("X won, X's turn");
+				turn.setText("X won, X goes first!");
 			}else if(line.equals("OOO")) {
 				u.setText("O");
 				l.setVisible(false);
 				player = 1;
-				turn.setText("O won, O's turn");
+				turn.setText("O won, O goes first!");
 			}
 		
 			
