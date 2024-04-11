@@ -22,6 +22,9 @@ public class Board extends Application implements Initializable{
 	private Text title = new Text("Supreme TicTacToe!!");
 	
 	@FXML
+	private Text turn = new Text("");
+	
+	@FXML
 	private GridPane b1;
 	@FXML
 	private GridPane b2;
@@ -262,6 +265,13 @@ public class Board extends Application implements Initializable{
 //
 	@Override
 	public void initialize(URL arg0, ResourceBundle arg1) {
+		
+		if(player == 0) {
+			turn.setText("X's Turn");
+		}else if(player == 1) {
+			turn.setText("O's Turn");
+		}
+		
 		b1Buttons = new ArrayList<>(Arrays.asList(b1r1c1, b1r1c2, b1r1c3, b1r2c1, b1r2c2, b1r2c3, b1r3c1, b1r3c2, b1r3c3));
 		b2Buttons = new ArrayList<>(Arrays.asList(b2r1c1, b2r1c2, b2r1c3, b2r2c1, b2r2c2, b2r2c3, b2r3c1, b2r3c2, b2r3c3));
 		b3Buttons = new ArrayList<>(Arrays.asList(b3r1c1, b3r1c2, b3r1c3, b3r2c1, b3r2c2, b3r2c3, b3r3c1, b3r3c2, b3r3c3));
@@ -324,9 +334,11 @@ public class Board extends Application implements Initializable{
 
 	public void setSymbol(Button b) {
 		if(player %2 == 0) {
+			turn.setText("X's Turn");
 			b.setText("X");
 			player = 1;
 		}else {
+			turn.setText("O's Turn");
 			b.setText("O");
 			player = 0;
 		}

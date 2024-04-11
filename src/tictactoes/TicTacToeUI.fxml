@@ -276,7 +276,12 @@
             </GridPane>
          </children>
       </GridPane>
-      <Text fx:id="title" fill="#050e3c" layoutX="252.0" layoutY="40.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Supreme TicTacToe!!">
+      <Text fx:id="title" fill="#050e3c" layoutX="93.0" layoutY="40.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Supreme TicTacToe!!">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Text>
+      <Text fx:id="turn" layoutX="542.0" layoutY="35.0" strokeType="OUTSIDE" strokeWidth="0.0">
          <font>
             <Font size="24.0" />
          </font>
