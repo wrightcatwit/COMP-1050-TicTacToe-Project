@@ -252,8 +252,6 @@ public class Board extends Application implements Initializable{
     
     ArrayList<GridPane> grids;
 	
-    @FXML
-    private Button restart;
     
 	public static void main(String[] args) {launch(args);}
 
@@ -286,7 +284,6 @@ public class Board extends Application implements Initializable{
 		b7Buttons = new ArrayList<>(Arrays.asList(b7r1c1, b7r1c2, b7r1c3, b7r2c1, b7r2c2, b7r2c3, b7r3c1, b7r3c2, b7r3c3));
 		b8Buttons = new ArrayList<>(Arrays.asList(b8r1c1, b8r1c2, b8r1c3, b8r2c1, b8r2c2, b8r2c3, b8r3c1, b8r3c2, b8r3c3));
 		b9Buttons = new ArrayList<>(Arrays.asList(b9r1c1, b9r1c2, b9r1c3, b9r2c1, b9r2c2, b9r2c3, b9r3c1, b9r3c2, b9r3c3));
-		grids = new ArrayList<>(Arrays.asList(b1,b2,b3,b4,b5,b6,b7,b8,b9));
 		
 	//making 9 of these later
 		b1Buttons.forEach(b -> {
@@ -337,63 +334,6 @@ public class Board extends Application implements Initializable{
 			b.setFocusTraversable(false);
 		});
 		
-		restart.setOnMouseClicked(e ->{
-			title.setText("Supreme TicTacToe");
-			turn.setText("X's Turn");
-			
-			player = 0;
-			
-			b1Buttons.forEach(b -> {
-			b.setText("");
-			b.setDisable(false);
-			});
-			
-			b2Buttons.forEach(b -> {
-				b.setText("");
-				b.setDisable(false);
-				});
-			
-			b3Buttons.forEach(b -> {
-				b.setText("");
-				b.setDisable(false);
-				});
-			
-			b4Buttons.forEach(b -> {
-				b.setText("");
-				b.setDisable(false);
-				});
-			
-			b5Buttons.forEach(b -> {
-				b.setText("");
-				b.setDisable(false);
-				});
-			
-			b6Buttons.forEach(b -> {
-				b.setText("");
-				b.setDisable(false);
-				});
-			
-			b7Buttons.forEach(b -> {
-				b.setText("");
-				b.setDisable(false);
-				});
-			
-			b8Buttons.forEach(b -> {
-				b.setText("");
-				b.setDisable(false);
-				});
-			
-			b9Buttons.forEach(b -> {
-				b.setText("");
-				b.setDisable(false);
-				});
-			
-			grids.forEach(g -> {
-				g.setVisible(true);
-			});
-			
-			
-		});
 	}
 
 	public void setSymbol(Button b) {
@@ -427,7 +367,6 @@ public class Board extends Application implements Initializable{
 			};
 			
 			if(bigLine.equals("XXX")) {
-				restart.setVisible(true);
 				title.setText("X Wins!!");
 				turn.setText("");
 				b1Buttons.forEach(b ->{
@@ -458,7 +397,6 @@ public class Board extends Application implements Initializable{
 					b.setDisable(true);
 				});
 			}else if(bigLine.equals("OOO")) {
-				restart.setVisible(true);
 				title.setText("O Wins!!");
 				
 				turn.setText("");
