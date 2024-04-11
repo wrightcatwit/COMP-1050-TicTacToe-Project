@@ -334,11 +334,11 @@ public class Board extends Application implements Initializable{
 
 	public void setSymbol(Button b) {
 		if(player %2 == 0) {
-			turn.setText("X's Turn");
+			turn.setText("O's Turn");
 			b.setText("X");
 			player = 1;
 		}else {
-			turn.setText("O's Turn");
+			turn.setText("X's Turn");
 			b.setText("O");
 			player = 0;
 		}
