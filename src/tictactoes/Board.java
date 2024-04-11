@@ -364,6 +364,7 @@ public class Board extends Application implements Initializable{
 			
 			if(bigLine.equals("XXX")) {
 				title.setText("X Wins!!");
+				turn.setText("");
 				b1Buttons.forEach(b ->{
 					b.setDisable(true);
 				});
@@ -393,6 +394,8 @@ public class Board extends Application implements Initializable{
 				});
 			}else if(bigLine.equals("OOO")) {
 				title.setText("O Wins!!");
+				
+				turn.setText("");
 				b1Buttons.forEach(b ->{
 					b.setDisable(true);
 				});
