@@ -468,6 +468,7 @@ public class Board extends Application implements Initializable{
 		}
 	}
 	
+	
 	private void pressed(Button b, ArrayList<Button> e,GridPane l,Text u) {
 		b.setOnMouseClicked(m -> {
 			setSymbol(b);

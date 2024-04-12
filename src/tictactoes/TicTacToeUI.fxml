@@ -24,7 +24,7 @@
          <children>
             <Text fx:id="t2" fill="#0e1361" strokeType="OUTSIDE" strokeWidth="0.0" GridPane.columnIndex="1" GridPane.halignment="CENTER">
                <font>
-                  <Font size="25.0" />
+                  <Font size="64.0" />
                </font>
             </Text>
             <GridPane fx:id="b2" gridLinesVisible="true" GridPane.columnIndex="1">
@@ -52,7 +52,7 @@
             </GridPane>
             <Text fx:id="t3" fill="#191868" strokeType="OUTSIDE" strokeWidth="0.0" GridPane.columnIndex="2" GridPane.halignment="CENTER">
                <font>
-                  <Font size="25.0" />
+                  <Font size="64.0" />
                </font>
             </Text>
             <GridPane fx:id="b3" gridLinesVisible="true" GridPane.columnIndex="2">
@@ -80,7 +80,7 @@
             </GridPane>
             <Text fx:id="t4" fill="#0e1361" strokeType="OUTSIDE" strokeWidth="0.0" GridPane.halignment="CENTER" GridPane.rowIndex="1">
                <font>
-                  <Font size="25.0" />
+                  <Font size="64.0" />
                </font>
             </Text>
             <GridPane fx:id="b4" gridLinesVisible="true" GridPane.rowIndex="1">
@@ -108,7 +108,7 @@
             </GridPane>
             <Text fx:id="t5" fill="#0e1361" strokeType="OUTSIDE" strokeWidth="0.0" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="1">
                <font>
-                  <Font size="25.0" />
+                  <Font size="64.0" />
                </font>
             </Text>
             <GridPane fx:id="b5" gridLinesVisible="true" GridPane.columnIndex="1" GridPane.rowIndex="1">
@@ -136,7 +136,7 @@
             </GridPane>
             <Text fx:id="t6" fill="#0e1361" strokeType="OUTSIDE" strokeWidth="0.0" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="1">
                <font>
-                  <Font size="25.0" />
+                  <Font size="64.0" />
                </font>
             </Text>
             <GridPane fx:id="b6" gridLinesVisible="true" GridPane.columnIndex="2" GridPane.rowIndex="1">
@@ -164,7 +164,7 @@
             </GridPane>
             <Text fx:id="t7" fill="#0e1361" strokeType="OUTSIDE" strokeWidth="0.0" GridPane.halignment="CENTER" GridPane.rowIndex="2">
                <font>
-                  <Font size="25.0" />
+                  <Font size="64.0" />
                </font>
             </Text>
             <GridPane fx:id="b7" gridLinesVisible="true" GridPane.rowIndex="2">
@@ -192,7 +192,7 @@
             </GridPane>
             <Text fx:id="t8" fill="#0e1361" strokeType="OUTSIDE" strokeWidth="0.0" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="2">
                <font>
-                  <Font size="25.0" />
+                  <Font size="64.0" />
                </font>
             </Text>
             <GridPane fx:id="b8" gridLinesVisible="true" GridPane.columnIndex="1" GridPane.rowIndex="2">
@@ -220,7 +220,7 @@
             </GridPane>
             <Text fx:id="t9" fill="#0e1361" strokeType="OUTSIDE" strokeWidth="0.0" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="2">
                <font>
-                  <Font size="25.0" />
+                  <Font size="64.0" />
                </font>
             </Text>
             <GridPane fx:id="b9" gridLinesVisible="true" GridPane.columnIndex="2" GridPane.rowIndex="2">
@@ -248,7 +248,7 @@
             </GridPane>
             <Text fx:id="t1" fill="#0e1361" strokeType="OUTSIDE" strokeWidth="0.0" GridPane.halignment="CENTER">
                <font>
-                  <Font size="25.0" />
+                  <Font size="64.0" />
                </font>
             </Text>
             <GridPane fx:id="b1" gridLinesVisible="true">
