@@ -340,12 +340,12 @@ public class Board extends Application implements Initializable{
 	public void setSymbol(Button b) {
 		if(player %2 == 0) {
 			turn.setText("O's Turn");
-			b.setTextFill(Color.INDIANRED);
+			b.setTextFill(Color.DARKRED);
 			b.setText("X");
 			player = 1;
 		}else {
 			turn.setText("X's Turn");
-			b.setTextFill(Color.DEEPSKYBLUE);
+			b.setTextFill(Color.DARKBLUE);
 			b.setText("O");
 			player = 0;
 		}
@@ -451,13 +451,13 @@ public class Board extends Application implements Initializable{
 			};
 			
 			if(line.equals("XXX")) {
-				u.setFill(Color.INDIANRED);
+				u.setFill(Color.DARKRED);
 				u.setText("X");
 				l.setVisible(false);
 				player = 0;
 				turn.setText("X won, X goes first!");
 			}else if(line.equals("OOO")) {
-				u.setFill(Color.DEEPSKYBLUE);
+				u.setFill(Color.DARKBLUE);
 				u.setText("O");
 				l.setVisible(false);
 				player = 1;
